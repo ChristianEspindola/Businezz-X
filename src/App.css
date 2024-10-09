@@ -152,6 +152,7 @@ textarea::placeholder {
 
 .base2 {
   background-image: url("./img/fondo.png");
+
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -251,27 +252,74 @@ textarea::placeholder {
 .subrayado {
   border-bottom: 5px solid #0097ff;
 }
+.footer {
+  background-color: #1b1b1b; /* Color de fondo del footer */
+  color: #ffffff;
+  width: 100vw; /* Asegura que el footer ocupe todo el ancho de la ventana */
+  padding: 20px 0;
+  box-sizing: border-box; /* Incluye el padding dentro del tamaño total */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 10%;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 10px;
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-section p,
+.footer-section a {
+  font-size: 14px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #444;
+  font-size: 12px;
+  color: #bbbbbb;
+  width: 100%;
+}
 
 @media (min-width: 1024px) {
   .container-flex {
-    flex-direction: row; /* Mostrar base1 y base2 en fila */
+    flex-direction: row;
     justify-content: space-between;
   }
 
   .base1,
   .base2 {
-    width: 50%; /* Cada sección ocupa el 50% del ancho */
-    height: 100vh; /* Asegurar que ambas tengan la misma altura */
+    width: 50%;
+    height: 100vh;
   }
 
   .base2 {
-    background-size: cover; /* Asegura que el fondo se ajuste bien en pantalla grande */
+    background-size: cover;
   }
 }
 
 @media (max-width: 1024px) {
   body {
-    overflow-x: hidden; /* Asegura que no haya scroll horizontal */
+    overflow-x: hidden;
   }
 
   .fondo {
