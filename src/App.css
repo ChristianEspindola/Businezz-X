@@ -1,0 +1,392 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Arial", "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-width: 320px;
+  min-height: 100vh;
+  color: #ffffff;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 3rem;
+  font-weight: 650;
+  margin: 10%;
+}
+
+h2 {
+  margin-top: 2%;
+  font-size: 1.8rem;
+  margin-bottom: 5%;
+  font-weight: 700;
+  color: #001b34;
+  letter-spacing: -1px;
+}
+.container-flex {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.d-inline-block:hover {
+  transform: scale(1.1);
+}
+
+.custom-bar {
+  display: inline-block;
+  width: 2px;
+  height: 40px;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0)
+  );
+  margin: 0 10px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #001b34;
+  font-weight: bold;
+}
+.espacio {
+  display: inline-block;
+  width: 550px;
+  height: 1px;
+  background: linear-gradient(
+    to bottom,
+    rgba(31, 78, 104, 255),
+    rgba(33, 71, 94, 255),
+    rgba(33, 69, 93, 255)
+  );
+  margin: 0 10px;
+}
+
+.navbar-light:hover .navbar-nav:hover .nav-link:hover {
+  letter-spacing: 1px;
+  transform: scale(1.1);
+}
+
+.menu {
+  margin: 1%;
+}
+
+.navbar-brand {
+  margin-left: 10%;
+  font-weight: bold;
+}
+
+.navbar-toggler {
+  border: 1px solid #001b34;
+  border-radius: 25px;
+  padding: 10px 15px;
+  background-color: #ffffff;
+  transition: all 0.3s ease;
+  outline: none;
+  position: relative;
+}
+
+.navbar-toggler:hover {
+  background-color: #003957;
+  transform: scale(1.1);
+  border-color: #001b34;
+}
+
+.navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%230097ff' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  width: 30px;
+  height: 30px;
+}
+
+.book {
+  font-size: 0.85rem;
+  margin-top: 2%;
+  background-color: #fff;
+  color: #001b34;
+  font-weight: bold;
+  border-radius: 5rem;
+  border: 3px solid #001b34;
+}
+
+.col-md-6 p {
+  color: #ffffff;
+}
+
+form .form-group label {
+  font-weight: bold;
+}
+
+form .form-group input,
+form .form-group textarea {
+  border-radius: 0;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #001b34;
+  font-weight: bold;
+  font-size: 15px;
+}
+.base1,
+.base2 {
+  width: 100%;
+  transition: background 0.5s ease;
+}
+
+.base1 {
+  background: linear-gradient(to bottom left, #022a41, #003957 80%);
+}
+
+.base1:hover {
+  background: linear-gradient(to bottom left, #003957, #022a41 80%);
+}
+
+.base2 {
+  background-image: url("./img/fondo.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.fondo {
+  background-color: #fff;
+  margin-top: 35%;
+
+  width: 85%;
+  height: auto;
+}
+.formulario-entero {
+  padding: 8%;
+  width: 100%;
+}
+
+.superior-button {
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #ffffff;
+  border-radius: 5rem;
+  color: #001b34;
+  border: 3px solid #001b34;
+  padding: 1%;
+}
+
+.welcome {
+  border: 1px solid #001b34;
+  padding: 1%;
+  max-width: 170px;
+  margin-left: 10%;
+  margin-top: 10%;
+  margin-bottom: -5%;
+  font-size: 12px;
+  text-align: center;
+  background-color: transparent;
+  border-color: #fff;
+  border-radius: 5rem;
+  font-weight: bold;
+}
+
+.get-button {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  background-color: #fff;
+  border-radius: 0.4rem;
+  border: 2px solid #001b34;
+  color: #001b34;
+  width: 100%;
+  height: 50px;
+}
+
+.get-button:hover,
+.superior-button:hover,
+.contact-button:hover,
+.book:hover {
+  background-color: #003957;
+  transform: scale(1.03);
+  border-color: black;
+}
+
+.custom-bar {
+  display: inline-block;
+  width: 1px;
+  height: 35px;
+  background: linear-gradient(to bottom, rgb(207, 207, 207));
+  margin: 0 10px;
+}
+
+.espacio {
+  display: inline-block;
+  width: 100%; /* Asegura que no genere un scroll horizontal */
+  max-width: 550px;
+  height: 1px;
+  background: linear-gradient(to bottom, rgba(31, 78, 104, 255));
+  margin: 0 10px;
+}
+
+.elevate {
+  font-family: "Poppins", sans-serif;
+  margin: 10%;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.contact-button {
+  margin-left: 10%;
+  font-weight: bold;
+  color: #001b34;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  width: 150px;
+  border: 2px solid transparent;
+}
+
+.subrayado {
+  border-bottom: 5px solid #0097ff;
+}
+
+@media (min-width: 1024px) {
+  .container-flex {
+    flex-direction: row; /* Mostrar base1 y base2 en fila */
+    justify-content: space-between;
+  }
+
+  .base1,
+  .base2 {
+    width: 50%; /* Cada sección ocupa el 50% del ancho */
+    height: 100vh; /* Asegurar que ambas tengan la misma altura */
+  }
+
+  .base2 {
+    background-size: cover; /* Asegura que el fondo se ajuste bien en pantalla grande */
+  }
+}
+
+@media (max-width: 1024px) {
+  body {
+    overflow-x: hidden; /* Asegura que no haya scroll horizontal */
+  }
+
+  .fondo {
+    width: 90%;
+    height: auto;
+    margin-top: 5%;
+  }
+
+  .formulario-entero {
+    padding: 5%;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    margin: 5%;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+    margin: 4%;
+  }
+  .welcome {
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-bottom: 1%;
+  }
+  .elevate {
+    margin: 5%;
+  }
+  .contact-button {
+    margin-left: 5%;
+  }
+
+  .get-button {
+    width: 100%;
+    height: 45px;
+    font-size: 0.85rem;
+  }
+
+  .superior-button {
+    width: 30%;
+    font-size: 14px;
+  }
+}
+
+/* Estilos para móviles grandes */
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden; /* Evita scroll horizontal */
+  }
+
+  .fondo {
+    width: 95%;
+    margin: 5%;
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin: 5%;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  .get-button,
+  .superior-button {
+    width: 100%;
+    font-size: 14px;
+    height: 40px;
+  }
+
+  .elevate {
+    font-size: 18px;
+    margin: 5%;
+  }
+
+  .formulario-entero {
+    padding: 4%;
+  }
+}
+
+/* Estilos para móviles pequeños */
+@media (max-width: 576px) {
+  body {
+    margin-top: 2%;
+    overflow-x: hidden; /* Evita scroll horizontal */
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .fondo {
+    width: 100%;
+    margin: 1%;
+  }
+
+  .get-button,
+  .superior-button,
+  .contact-button {
+    font-size: 12px;
+    height: 40px;
+  }
+
+  .formulario-entero {
+    padding: 3%;
+  }
+
+  .navbar-toggler {
+    padding: 8px 10px;
+    border-radius: 20px;
+  }
+}
